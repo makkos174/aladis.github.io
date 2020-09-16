@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="description" content="Описание страницы сайта."/>
+	<meta name="keywords" content="ключевые слова" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/nouislider.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<title>aladis - Каталог</title>
+</head>
+<body>
+
+	<header class="header">
+
+		<div class="header__top container">
+
+			<p class="header__region">Ваш регион: <a href="#">Москва</a></p>
+
+			<div class="header__adress">
+				<img src="img/header/header-adress-icon.png" alt="Москва, ул. Промышленная, 208">
+				<p>Москва, ул. Промышленная, 208</p>
+			</div>
+
+			<div class="header__mail">
+				<img src="img/header/header-mail-icon.png" alt="info@gmail.com">
+				<p>info@gmail.com</p>
+			</div>
+
+			<div class="header__phone">
+				<a href="tel:89455555555" class="header__phone__img">
+					<img src="img/header/header-phone-icon.png" alt="+7 (945) 555-55-55">
+				</a>
+				<a href="tel:89455555555" class="header__phone__number">+7 (945) 555-55-55</a>
+			</div>
+		</div>
+
+		<div class="header__center container">
+
+			<div class="header__logo">
+				<img src="img/header/header-logo.png" alt="Aladis">
+			</div>
+
+			<form action="#" class="header__search">
+				<input type="search" name="q" placeholder="Введите название товара..." class="header__search__input"> 
+   			<button class="header__search__button"><img src="img/header/header-search-icon.png" alt="Поиск"></button>
+			</form>
+
+			<div class="header__persanal">
+				<div class="mobile-menu-burger">
+					<span></span>
+				</div>
+
+				<a href="#" class="header__persanal__block header__persanal-area">
+					<img src="img/header/header-persanalArea-icon.png" alt="Личный кабинет">
+				</a>
+				<a href="bascket.html" class="header__persanal__block header__persanal-bascket">
+					<img src="img/header/header-basket-icon.png" alt="Корзина">
+					<span class="header__persanal-bascket__products">4</span>
+				</a>
+			</div>
+		</div>
+
+		<nav class="nav container">
+
+			<div class="nav__category">
+				<a href="#" class="nav__category__burger">
+					<span></span>
+				</a>
+				<a href="#" class="nav__category__link">Каталог товаров</a>
+			</div>		 
+
+			<ul class="nav__items">
+				<li class="nav__item"><a href="index.html">О компании</a></li>
+				<li class="nav__item"><a href="#">Статьи</a></li>
+				<li class="nav__item"><a href="main.html">Новостной блок</a></li>
+				<li class="nav__item"><a href="delivery.html">Доставка и оплата</a></li>
+				<li class="nav__close__mobile">X</li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="breadcrumbs container">
+		<a href="index.html" class="breadcrumbs__link"><img src="img/breadcrumbs-icon.png" alt="Главная"></a>
+		<span>&rarr;</span>
+		<a href="bascket.html" class="breadcrumbs__link">Каталог</a>
+		<span>&rarr;</span>
+		<div class="dropdown"><a href="bascket.html" class="breadcrumbs__link">Cambium Networks
+			<div class="dropdown-content">
+				<div class="dropdown-content-left"><img src="img/catalog/tg.png" alt=""></div>
+				<div class="dropdown-content-right">
+					<a href="#" class="dropdown-link">cnPilot</a>
+				    <a href="#" class="dropdown-link">cnVision</a>
+				    <a href="#" class="dropdown-link">ePMP</a>
+				    <a href="#" class="dropdown-link">PMP450i/450m</a>
+				    <a href="#" class="dropdown-link">PTP450/450i/550/550E</a>
+				</div>
+			</div>
+		</a></div>
+	</div>
+
+	<main class="catalog-main container">
+		<div class="catalog-main-header">
+		<div class="catalog-main-header-block"></div>
+		<div class="catalog-main-slider">
+			<div class="catalog-slider-items">
+				<div class="catalog-slider-item catalog-slider-item-active">
+					<img src="img/catalog/slider-img.png" alt="">
+					cnMatrix
+				</div>
+				<div class="catalog-slider-item">
+					<img src="img/catalog/slider-img.png" alt="">
+					cnMatrix
+				</div>
+				<div class="catalog-slider-item">
+					<img src="img/catalog/slider-img.png" alt="">
+					cnMatrix
+				</div>
+				<div class="catalog-slider-item">
+					<img src="img/catalog/slider-img.png" alt="">
+					cnMatrix
+				</div>
+				<div class="catalog-slider-item">
+					<img src="img/catalog/slider-img.png" alt="">
+					cnMatrix
+				</div>
+				<div class="catalog-slider-item">
+					<img src="img/catalog/slider-img.png" alt="">
+					cnMatrix
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="catalog-main-body">
+			<div class="params-title-sm" id="burger-btn">
+				<div class="params-title-burger">
+					<span></span>
+				    <span></span>
+				    <span></span>
+				</div>
+				<div class="params-title-sm-title">
+					Подбор параметров
+				</div>
+			</div>
+			<div class="catalog-main-params">
+				<h2 class="params-title">Подбор параметров</h2>
+				<h5 class="params-subtitle">Цена</h5>
+				<div class="slider" id="slider"></div>
+				<div class="range-inputs">
+					<input type="number" id="number1" placeholder="от 49">
+					<input type="number" id="number2" placeholder="до 215675">
+				</div>
+				<input type="checkbox" id="stock"><label for="stock">Только в наличии</label>
+				<h5 class="params-subtitle">Стандарт PoE</h5>
+				<input type="checkbox" id="poe"><label for="poe">802.3af</label>
+				<h5 class="params-subtitle">Производитель</h5>
+				<input type="checkbox" id="maker"><label for="maker">Cambium Networks Limited</label>
+				<h5 class="params-subtitle">Количество LAN-портов</h5>
+				<div class="lan-block">
+					<input type="checkbox" id="lan-28"><label for="lan-28">28</label><br>
+				    <input type="checkbox" id="lan-14"><label for="lan-14">14</label><br>
+				    <input type="checkbox" id="lan-48"><label for="lan-48">48</label>
+				</div>
+				<h5 class="params-subtitle">SFP портов</h5>
+				<div class="sfp-block">
+					<input type="checkbox" id="sfp-4"><label for="sfp-4">4</label><br>
+				    <input type="checkbox" id="sfp-2"><label for="sfp-2">2</label>
+				</div>
+				<h5 class="params-subtitle">Поддержка PoE</h5>
+				<input type="checkbox" id="poe-2"><label for="poe-2">Да</label>
+				<div class="param-buttons">
+					<button class="param-btn1">Применить фильтры</button>
+					<button class="param-btn2">Сбросить</button>
+				</div>
+			</div>
+			<div class="catalog-main-table">
+				<div class="table-header">
+					<button class="catalog-svg" data-tab="tab-1" data-svg="svg-1"><svg  id="svg-1" class="svg active-svg" xmlns="http://www.w3.org/2000/svg" width="22" height="14" viewBox="0 0 22 14"><g><g><path  d="M0 0h6v6H0z"/></g><g><path  d="M8 0h6v6H8z"/></g><g><path  d="M16 0h6v6h-6z"/></g><g><path  d="M16 8h6v6h-6z"/></g><g><path  d="M8 8h6v6H8z"/></g><g><path  d="M0 8h6v6H0z"/></g></g></svg></button>
+					<button class="catalog-svg" data-tab="tab-2" data-svg="svg-2"><svg id="svg-2" class="svg" xmlns="http://www.w3.org/2000/svg" width="26" height="14" viewBox="0 0 26 14"><g><g><path  d="M0 0h6v6H0z"/></g><g><path  d="M0 8h6v6H0z"/></g><g><path  d="M8 0h18v6H8z"/></g><g><path  d="M8 8h18v6H8z"/></g></g></svg></button>
+					<button class="tabs-btn tabs-btn-active" data-tabs="tabs-1" id="tabs-1">Все товары</button>
+					<button class="tabs-btn tabs-btn-2" data-tabs="tabs-2" id="tabs-2">Только в наличии</button>
+					<button class="tabs-btn tabs-btn-right" data-tabs="tabs-3" id="tabs-3">По популярности <img src="img/catalog/row_down.png"></button>
+					<button class="tabs-btn tabs-btn-right" data-tabs="tabs-4" id="tabs-4">20 <img src="img/catalog/row_down.png"></button>
+				</div>
+				<div class="table-body">
+					<div class="table-body-block active" id="tab-1" data-catalog-content>
+						<div class="table-body-row table-body-row1">
+						<div class="table-card">
+					        <img src="img/product-card/sfp-m.png" alt="">
+					        <a href="product-card.html" class="table-card-title">Модульный SFP +10G с интерфейсом RG45</a>
+					        <p class="table-card-description">SNR-CPE-W4N (rev.M)</p>
+					        <div class="table-card-value">Склад: 314/405 шт</div>
+					        <div class="table-card-cost">6490 ₽</div>
+					        <button class="table-card-btn"><img src="img/catalog/cart.png">В корзину</button>
+			            </div>
+			            <div class="table-card">
+					        <img src="img/product-card/sfp-m.png" alt="">
+					        <a href="product-card.html" class="table-card-title">Модульный SFP +10G с интерфейсом RG45</a>
+					        <p class="table-card-description">SNR-CPE-W4N (rev.M)</p>
+					        <div class="table-card-value">Склад: 314/405 шт</div>
+					        <div class="table-card-cost">6490 ₽</div>
+					        <button class="table-card-btn"><img src="img/catalog/cart.png">В корзину</button>
+			            </div>
+			            <div class="table-card">
+					        <img src="img/product-card/sfp-m.png" alt="">
+					        <a href="product-card.html" class="table-card-title">Модульный SFP +10G с интерфейсом RG45</a>
+					        <p class="table-card-description">SNR-CPE-W4N (rev.M)</p>
+					        <div class="table-card-value">Склад: 314/405 шт</div>
+					        <div class="table-card-cost">6490 ₽</div>
+					        <button class="table-card-btn"><img src="img/catalog/cart.png">В корзину</button>
+			            </div>
+			        </div>
+					<div class="table-body-row">
+						<div class="table-card">
+					        <img src="img/product-card/sfp-m.png" alt="">
+					        <a href="product-card.html" class="table-card-title">Модульный SFP +10G с интерфейсом RG45</a>
+					        <p class="table-card-description">SNR-CPE-W4N (rev.M)</p>
+					        <div class="table-card-value">Склад: 314/405 шт</div>
+					        <div class="table-card-cost">6490 ₽</div>
+					        <button class="table-card-btn"><img src="img/catalog/cart.png">В корзину</button>
+			            </div>
+			            <div class="table-card">
+					        <img src="img/product-card/sfp-m.png" alt="">
+					        <a href="product-card.html" class="table-card-title">Модульный SFP +10G с интерфейсом RG45</a>
+					        <p class="table-card-description">SNR-CPE-W4N (rev.M)</p>
+					        <div class="table-card-value">Склад: 314/405 шт</div>
+					        <div class="table-card-cost">6490 ₽</div>
+					        <button class="table-card-btn"><img src="img/catalog/cart.png">В корзину</button>
+			            </div>
+			            <div class="table-card">
+					        <img src="img/product-card/sfp-m.png" alt="">
+					        <a href="product-card.html" class="table-card-title">Модульный SFP +10G с интерфейсом RG45</a>
+					        <p class="table-card-description">SNR-CPE-W4N (rev.M)</p>
+					        <div class="table-card-value">Склад: 314/405 шт</div>
+					        <div class="table-card-cost">6490 ₽</div>
+					        <button class="table-card-btn"><img src="img/catalog/cart.png">В корзину</button>
+			            </div>
+					</div>
+					<div class="table-body-row table-body-row3">
+						<div class="table-card">
+					        <img src="img/product-card/sfp-m.png" alt="">
+					        <h5 class="table-card-title">Модульный SFP +10G с интерфейсом RG45</h5>
+					        <p class="table-card-description">SNR-CPE-W4N (rev.M)</p>
+					        <div class="table-card-value">Склад: 314/405 шт</div>
+					        <div class="table-card-cost">6490 ₽</div>
+					        <button class="table-card-btn"><img src="img/catalog/cart.png">В корзину</button>
+			            </div>
+			            <div class="table-card">
+					        <img src="img/product-card/sfp-m.png" alt="">
+					        <h5 class="table-card-title">Модульный SFP +10G с интерфейсом RG45</h5>
+					        <p class="table-card-description">SNR-CPE-W4N (rev.M)</p>
+					        <div class="table-card-value">Склад: 314/405 шт</div>
+					        <div class="table-card-cost">6490 ₽</div>
+					        <button class="table-card-btn"><img src="img/catalog/cart.png">В корзину</button>
+			            </div>
+			            <div class="table-card">
+					        <img src="img/product-card/sfp-m.png" alt="">
+					        <h5 class="table-card-title">Модульный SFP +10G с интерфейсом RG45</h5>
+					        <p class="table-card-description">SNR-CPE-W4N (rev.M)</p>
+					        <div class="table-card-value">Склад: 314/405 шт</div>
+					        <div class="table-card-cost">6490 ₽</div>
+					        <button class="table-card-btn"><img src="img/catalog/cart.png">В корзину</button>
+			            </div>
+					</div>
+					</div>
+					<div class="table-body-block" id="tab-2" data-catalog-content>
+					<table class="table">
+						<tr class="table-list-header">
+							<td class="table-list-header-article">Артикул</td>
+							<td class="table-list-header-name">Наименование</td>
+							<td class="table-list-header-value">Склад</td>
+							<td class="table-list-header-cost">Цена</td>
+							<td class="table-list-header-img"><img src="img/catalog/cart-sm.png" alt=""></td>
+						</tr>
+						<tr>
+							<td class="table-list-article">SNR-CPE-W4N (rev.M)</td>
+							<td class="table-list-name"><a href="product-card.html">Модульный SFP +10G с интерфейсом RG45</a></td>
+							<td class="table-list-value">314/405 шт</td>
+							<td class="table-list-cost">6490 ₽</td>
+							<td class="table-list-btn"><button><img src="img/catalog/cart.png" alt=""></button></td>
+						</tr>
+						<tr>
+							<td class="table-list-article">SNR-CPE-W4N (rev.M)</td>
+							<td class="table-list-name"><a href="product-card.html">Модульный SFP +10G с интерфейсом RG45</a></td>
+							<td class="table-list-value">314/405 шт</td>
+							<td class="table-list-cost">6490 ₽</td>
+							<td class="table-list-btn"><button><img src="img/catalog/cart.png" alt=""></button></td>
+						</tr>
+						<tr>
+							<td class="table-list-article">SNR-CPE-W4N (rev.M)</td>
+							<td class="table-list-name"><a href="product-card.html">Модульный SFP +10G с интерфейсом RG45</a></td>
+							<td class="table-list-value">314/405 шт</td>
+							<td class="table-list-cost">6490 ₽</td>
+							<td class="table-list-btn"><button><img src="img/catalog/cart.png" alt=""></button></td>
+						</tr>
+						<tr>
+							<td class="table-list-article">SNR-CPE-W4N (rev.M)</td>
+							<td class="table-list-name"><a href="product-card.html">Модульный SFP +10G с интерфейсом RG45</a></td>
+							<td class="table-list-value">314/405 шт</td>
+							<td class="table-list-cost">6490 ₽</td>
+							<td class="table-list-btn"><button><img src="img/catalog/cart.png" alt=""></button></td>
+						</tr>
+						<tr>
+							<td class="table-list-article">SNR-CPE-W4N (rev.M)</td>
+							<td class="table-list-name"><a href="product-card.html">Модульный SFP +10G с интерфейсом RG45</a></td>
+							<td class="table-list-value">314/405 шт</td>
+							<td class="table-list-cost">6490 ₽</td>
+							<td class="table-list-btn"><button><img src="img/catalog/cart.png" alt=""></button></td>
+						</tr>
+						<tr>
+							<td class="table-list-article">SNR-CPE-W4N (rev.M)</td>
+							<td class="table-list-name"><a href="product-card.html">Модульный SFP +10G с интерфейсом RG45</a></td>
+							<td class="table-list-value">314/405 шт</td>
+							<td class="table-list-cost">6490 ₽</td>
+							<td class="table-list-btn"><button><img src="img/catalog/cart.png" alt=""></button></td>
+						</tr>
+						<tr>
+							<td class="table-list-article">SNR-CPE-W4N (rev.M)</td>
+							<td class="table-list-name"><a href="product-card.html">Модульный SFP +10G с интерфейсом RG45</a></td>
+							<td class="table-list-value">314/405 шт</td>
+							<td class="table-list-cost">6490 ₽</td>
+							<td class="table-list-btn"><button><img src="img/catalog/cart.png" alt=""></button></td>
+						</tr>
+						<tr>
+							<td class="table-list-article">SNR-CPE-W4N (rev.M)</td>
+							<td class="table-list-name"><a href="product-card.html">Модульный SFP +10G с интерфейсом RG45</a></td>
+							<td class="table-list-value">314/405 шт</td>
+							<td class="table-list-cost">6490 ₽</td>
+							<td class="table-list-btn"><button><img src="img/catalog/cart.png" alt=""></button></td>
+						</tr>
+					</table>
+					</div>
+				</div>
+				<div class="table-footer">
+					<div class="table-footer-text"><p>Показано 1–20 из 1831 результатов</p></div>
+					<div class="table-footer-pages">
+						<a href="#" class="footer-pages-item footer-pages-active">1</a>
+						<a href="#" class="footer-pages-item">2</a>
+						<a href="#" class="footer-pages-item">3</a>
+						<a href="#" class="footer-pages-item">4</a>
+						<a href="#" class="footer-pages-item-arrow"><img src="img/catalog/arrow-right.png" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer class="footer container">
+
+		<div class="footer__top">
+
+			<div class="footer__logo">
+				<img src="img/header/header-logo.png" alt="Aladis">
+				<p class="footer__logo__adress">Наш офис: г. Москва</p>
+			</div>
+
+			<nav class="footer__nav">
+				<p class="footer__nav__title">Компания <span>ALADIS</span></p>
+
+				<ul class="footer__nav__items">
+					<li class="footer__nav__item"><a href="index.html#">О компании</a></li>
+					<li class="footer__nav__item"><a href="index.html#">Статьи</a></li>
+					<li class="footer__nav__item"><a href="main.html">Новостной блок</a></li>
+					<li class="footer__nav__item"><a href="delivery.html">Доставка</a></li>
+					<li class="footer__nav__item"><a href="delivery.html">Оплата</a></li>
+				</ul>
+			</nav>
+
+			<div class="footer__contacts">
+				<div class="footer__contacts__block">
+					<img src="img/header/header-adress-icon.png" alt="Адрес">
+					<p>Москва, ул. Промышленная, 208</p>
+				</div>
+				<div class="footer__contacts__block">
+					<img src="img/header/header-phone-icon.png" alt="Телефон">
+					<a href="tel:89455555555">+7 (945) 555-55-55</a>
+				</div>
+				<div class="footer__contacts__block">
+					<img src="img/header/header-mail-icon.png" alt="Почта">
+					<p>info@gmail.com</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer__bottom">
+			<div class="footer__bottom__links">
+				<a href="#" class="footer__bottom__link">Политика конфиденциальности</a>
+				<a href="#" class="footer__bottom__link">Политика обработки ПД</a>
+			</div>
+			<p class="footer__bottom__copy">&copy; 1995–2020</p>
+		</div>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/nouislider.min.js"></script>
+	<script src="js/script.js"></script>
+	<script>
+		$(document).ready(function() {
+		$('.catalog-slider-items').slick({
+			arrows: true,
+			slidesToShow: 4,
+			responsive:[{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 3
+				}
+			}, {
+				breakpoint: 700,
+				settings: {
+					slidesToShow: 2
+				}
+			}]
+		});
+	});
+				//Ползунок
+var slider = document.getElementById('slider');
+
+noUiSlider.create(slider, {
+    start: [49, 216675],
+    connect: true,
+    range: {
+        'min': 49,
+        'max': 216675
+    }
+});
+
+var inputNumber = document.getElementById('number2');
+var select = document.getElementById('number1');
+
+for (var i = 49; i <= 216675; i++) {
+
+    var option = document.createElement("option");
+    option.text = i;
+    option.value = i;
+
+    select.appendChild(option);
+}
+
+slider.noUiSlider.on('update', function (values, handle) {
+
+    var value = values[handle];
+
+    if (handle) {
+        inputNumber.value = Math.round(value);
+    } else {
+        select.value = Math.round(value);
+    }
+});
+
+select.addEventListener('change', function () {
+    slider.noUiSlider.set([this.value, null]);
+});
+
+inputNumber.addEventListener('change', function () {
+    slider.noUiSlider.set([null, this.value]);
+});
+	</script>
+</body>
+</html>

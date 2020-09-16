@@ -1,0 +1,283 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="description" content="Описание страницы сайта."/>
+	<meta name="keywords" content="ключевые слова" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/style.css">
+
+	<title>aladis - корзина</title>
+</head>
+<body>
+
+	<header class="header">
+
+		<div class="header__top container">
+
+			<p class="header__region">Ваш регион: <a href="#">Москва</a></p>
+
+			<div class="header__adress">
+				<img src="img/header/header-adress-icon.png" alt="Москва, ул. Промышленная, 208">
+				<p>Москва, ул. Промышленная, 208</p>
+			</div>
+
+			<div class="header__mail">
+				<img src="img/header/header-mail-icon.png" alt="info@gmail.com">
+				<p>info@gmail.com</p>
+			</div>
+
+			<div class="header__phone">
+				<a href="tel:89455555555" class="header__phone__img">
+					<img src="img/header/header-phone-icon.png" alt="+7 (945) 555-55-55">
+				</a>
+				<a href="tel:89455555555" class="header__phone__number">+7 (945) 555-55-55</a>
+			</div>
+		</div>
+
+		<div class="header__center container">
+
+			<div class="header__logo">
+				<img src="img/header/header-logo.png" alt="Aladis">
+			</div>
+
+			<form action="#" class="header__search">
+				<input type="search" name="q" placeholder="Введите название товара..." class="header__search__input"> 
+   			<button class="header__search__button"><img src="img/header/header-search-icon.png" alt="Поиск"></button>
+			</form>
+
+			<div class="header__persanal">
+				<div class="mobile-menu-burger">
+					<span></span>
+				</div>
+
+				<a href="#" class="header__persanal__block header__persanal-area">
+					<img src="img/header/header-persanalArea-icon.png" alt="Личный кабинет">
+				</a>
+				<a href="#" class="header__persanal__block header__persanal-bascket">
+					<img src="img/header/header-basket-icon.png" alt="Корзина">
+					<span class="header__persanal-bascket__products">4</span>
+				</a>
+			</div>
+		</div>
+
+		<nav class="nav container">
+
+			<div class="nav__category">
+				<a href="#" class="nav__category__burger">
+					<span></span>
+				</a>
+				<a href="catalog.html" class="nav__category__link">Каталог товаров</a>
+			</div>		 
+
+			<ul class="nav__items">
+				<li class="nav__item"><a href="index.html">О компании</a></li>
+				<li class="nav__item"><a href="#">Статьи</a></li>
+				<li class="nav__item"><a href="main.html">Новостной блок</a></li>
+				<li class="nav__item"><a href="delivery.html">Доставка и оплата</a></li>
+				<li class="nav__close__mobile">X</li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="breadcrumbs container">
+		<a href="index.html" class="breadcrumbs__link"><img src="img/breadcrumbs-icon.png" alt="Главная"></a>
+		<span>&rarr;</span>
+		<a href="bascket.html" class="breadcrumbs__link">Корзина</a>
+	</div>
+
+	<section class="bascket container">
+		<div class="bascket__table">
+
+			<div class="bascket__table__name">
+				<div class="bascket__table__checkbox">
+					<input type="checkbox" class="bascket__check__ptoducts bascket__check__ptoducts_all">
+				</div>
+				<div class="bascket__table__vendor">
+					<p class="bascket__table__name__title">Артикул</p>
+				</div>
+				<div class="bascket__table__name__products">
+					<p class="bascket__table__name__title">Название</p>
+				</div>
+				<div class="bascket__table__price">
+					<p class="bascket__table__name__title">Цена</p>
+				</div>
+				<div class="bascket__table__quality">
+					<p class="bascket__table__name__title">Кол-во</p>
+				</div>
+				<div class="bascket__table__sum">
+					<p class="bascket__table__name__title">Сумма</p>
+				</div>
+			</div>
+
+			<div class="bascket__table__produscts" id="bascket__produscts-one">
+				<div class="bascket__table__checkbox">
+					<input type="checkbox" class="bascket__check__ptoducts bascket__check__ptoducts_all">
+				</div>
+				<div class="bascket__table__vendor">
+					<p class="bascket__table__products__title">SNR-CPE<span>-W4N (rev.M)</span></p>
+				</div>
+				<div class="bascket__table__name__products">
+					<p class="bascket__table__products__title">Модульный SFP <span>+10G с интерфейсом RG45</span></p>
+				</div>
+
+				<div class="bascket__table__price">
+					<p class="bascket__table__products__title"><span class="bascket__table__products__price">6490</span> ₽</p>
+				</div>
+
+				<div class="bascket__table__quality">
+					<input type="text" class="bascket__products__quality" value="1">
+				</div>
+
+				<div class="bascket__table__sum">
+					<p class="bascket__table__products__title"><span class="bascket__table__products__sum">6490</span> ₽</p>
+				</div>
+
+				<span class="bascket__products__del">X</span>
+			</div>
+
+			<div class="bascket__table__produscts">
+				<div class="bascket__table__checkbox">
+					<input type="checkbox" class="bascket__check__ptoducts bascket__check__ptoducts_all">
+				</div>
+				<div class="bascket__table__vendor">
+					<p class="bascket__table__products__title">SNR-CPE<span>-W4N (rev.M)</span></p>
+				</div>
+				<div class="bascket__table__name__products">
+					<p class="bascket__table__products__title">Модульный SFP <span>+10G с интерфейсом RG45</span></p>
+				</div>
+
+				<div class="bascket__table__price">
+					<p class="bascket__table__products__title"><span class="bascket__table__products__price">6490</span> ₽</p>
+				</div>
+
+				<div class="bascket__table__quality">
+					<input type="text" class="bascket__products__quality" value="1">
+				</div>
+
+				<div class="bascket__table__sum">
+					<p class="bascket__table__products__title"><span class="bascket__table__products__sum">6490</span> ₽</p>
+				</div>
+
+				<span class="bascket__products__del">X</span>
+			</div>
+
+			<div class="bascket__table__produscts">
+				<div class="bascket__table__checkbox">
+					<input type="checkbox" class="bascket__check__ptoducts bascket__check__ptoducts_all">
+				</div>
+				<div class="bascket__table__vendor">
+					<p class="bascket__table__products__title">SNR-CPE<span>-W4N (rev.M)</span></p>
+				</div>
+				<div class="bascket__table__name__products">
+					<p class="bascket__table__products__title">Модульный SFP <span>+10G с интерфейсом RG45</span></p>
+				</div>
+
+				<div class="bascket__table__price">
+					<p class="bascket__table__products__title"><span class="bascket__table__products__price">6490</span> ₽</p>
+				</div>
+
+				<div class="bascket__table__quality">
+					<input type="text" class="bascket__products__quality" value="1">
+				</div>
+
+				<div class="bascket__table__sum">
+					<p class="bascket__table__products__title"><span class="bascket__table__products__sum">6490</span> ₽</p>
+				</div>
+
+				<span class="bascket__products__del">X</span>
+			</div>
+
+			<div class="bascket__table__produscts">
+				<div class="bascket__table__checkbox">
+					<input type="checkbox" class="bascket__check__ptoducts bascket__check__ptoducts_all">
+				</div>
+				<div class="bascket__table__vendor">
+					<p class="bascket__table__products__title">SNR-CPE<span>-W4N (rev.M)</span></p>
+				</div>
+				<div class="bascket__table__name__products">
+					<p class="bascket__table__products__title">Модульный SFP <span>+10G с интерфейсом RG45</span></p>
+				</div>
+
+				<div class="bascket__table__price">
+					<p class="bascket__table__products__title"><span class="bascket__table__products__price">6490</span> ₽</p>
+				</div>
+
+				<div class="bascket__table__quality">
+					<input type="text" class="bascket__products__quality" value="1">
+				</div>
+
+				<div class="bascket__table__sum">
+					<p class="bascket__table__products__title"><span class="bascket__table__products__sum">6490</span> ₽</p>
+				</div>
+
+				<span class="bascket__products__del">X</span>
+			</div>
+
+			<div class="bascket__table__total">
+				<p class="bascket__total__text">Итого <span class="bascket__total__quality">4</span> позиции на сумму: <span class="bascket__total__sum">8000.00</span> р.</p>
+				<div class="bascket__total__buttons">
+					<button class="bascket__button">Оформить</button>
+					<button class="bascket__button bascket__button_del">Удалить выбранные позиции</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<footer class="footer container">
+
+		<div class="footer__top">
+
+			<div class="footer__logo">
+				<img src="img/header/header-logo.png" alt="Aladis">
+				<p class="footer__logo__adress">Наш офис: г. Москва</p>
+			</div>
+
+			<nav class="footer__nav">
+				<p class="footer__nav__title">Компания <span>ALADIS</span></p>
+
+				<ul class="footer__nav__items">
+					<li class="footer__nav__item"><a href="index.html#">О компании</a></li>
+					<li class="footer__nav__item"><a href="index.html#">Статьи</a></li>
+					<li class="footer__nav__item"><a href="main.html">Новостной блок</a></li>
+					<li class="footer__nav__item"><a href="delivery.html">Доставка</a></li>
+					<li class="footer__nav__item"><a href="delivery.html">Оплата</a></li>
+				</ul>
+			</nav>
+
+			<div class="footer__contacts">
+				<div class="footer__contacts__block">
+					<img src="img/header/header-adress-icon.png" alt="Адрес">
+					<p>Москва, ул. Промышленная, 208</p>
+				</div>
+				<div class="footer__contacts__block">
+					<img src="img/header/header-phone-icon.png" alt="Телефон">
+					<a href="tel:89455555555">+7 (945) 555-55-55</a>
+				</div>
+				<div class="footer__contacts__block">
+					<img src="img/header/header-mail-icon.png" alt="Почта">
+					<p>info@gmail.com</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer__bottom">
+			<div class="footer__bottom__links">
+				<a href="#" class="footer__bottom__link">Политика конфиденциальности</a>
+				<a href="#" class="footer__bottom__link">Политика обработки ПД</a>
+			</div>
+			<p class="footer__bottom__copy">&copy; 1995–2020</p>
+		</div>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
